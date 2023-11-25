@@ -1,12 +1,11 @@
 import '../styles/App.css'
+import Header from './Header/Header'
 
 function App() {
 
   return (
-    <div className="w-screen h-screen bg-purple-800">
-      <h1 className="py-[20%] text-center text-white text-3xl font-bold underline">
-        Everything is working fine!
-      </h1>
+    <div>
+      <Header />
     </div>
   )
 }
