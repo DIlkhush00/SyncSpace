@@ -1,8 +1,10 @@
+import Header_Profile from "./Header_Profile"
+
 function Header_Lower() {
 
   return (
-    <div className="text-3xl font-bold underline">
-      <h1>BYE?? Bye</h1>
+    <div className='pl-[4rem] bg-primary w-screen h-[6.75rem]'>
+      <Header_Profile />
     </div>
   )
 }
