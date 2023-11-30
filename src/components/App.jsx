@@ -1,4 +1,5 @@
 import '../styles/App.css'
+import Body from './Body/Body'
 import Header from './Header/Header'
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
   return (
     <div>
       <Header />
+      <Body />
     </div>
   )
 }
