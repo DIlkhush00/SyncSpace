@@ -8,6 +8,8 @@ export default {
     extend: {
       colors: {
         primary: '#1A1A1A',
+        leaf: '#222C27',
+        gry: '#2C2C2C',
       }
     },
   },
