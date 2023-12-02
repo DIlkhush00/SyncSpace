@@ -1,0 +1,33 @@
+/* VerticalNavbar.css */
+
+.vertical-navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: #1A1A1A;
+    color: #fff;
+    padding: 1em;
+
+  }
+  
+  .navbar-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add transition for smooth effect */
+    font-size: large;
+
+  }
+  
+  .navbar-item:hover {
+    background-color: #006346;
+  }
+  
+  .navbar-item.active {
+    background-color: #008c62;
+  }
+  
+  .navbar-item span {
+    margin-left: 0.5em;
+  }
+  
