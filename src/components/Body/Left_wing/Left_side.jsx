@@ -1,16 +1,21 @@
-import Clock from './Clock'
-import navi from './nav'
-import img from './image2'
+import Clock from './Clock';
+import Sticker from './image2'; // Assuming image2 is the file for the Sticker component
+import Navbar from './navbar';
 
-function Left_wing() {
-
+function LeftWing() {
   return (
-    <div class="w-317 h-609 bg-gray-300">
-      <Clock />
-      <navi />
-      <img />
+    <div className="flex flex-col justify-between w-[19.651rem] h-[38.065rem]  bg-primary ">
+      <div>
+        <Clock />
+      </div>
+      <div>
+        <Navbar />
+      </div>
+      <div>
+        <Sticker />
+      </div>
     </div>
-  )
+  );
 }
 
-export default Left_wing
+export default LeftWing;
