@@ -1,6 +1,6 @@
 import Clock from './Clock';
-import Sticker from './image2'; // Assuming image2 is the file for the Sticker component
-import Navbar from './navbar';
+import Sticker from './Sticker'; // Assuming image2 is the file for the Sticker component
+import Navbar from './Navbar1';
 
 function LeftWing() {
   return (

@@ -4,7 +4,7 @@ import React from 'react';
 import { FiHome, FiMail, FiSettings, FiUser } from 'react-icons/fi'; // Import icons from react-icons
 import './VerticalNavbar.css'; // Create a CSS file for styling
 
-const Navbar = () => {
+const Navbar1 = () => {
   return (
     <div className="vertical-navbar">
       <div className="navbar-item">
@@ -27,4 +27,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar1;
