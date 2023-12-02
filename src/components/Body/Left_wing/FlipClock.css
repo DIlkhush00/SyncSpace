@@ -1,0 +1,103 @@
+
+
+
+.clock {
+  position: relative;
+  font-family: monaco, consolas, "courier new", monospace;
+  font-size: 2rem; /* Adjust the font size for the clock */
+  line-height: 1.2;
+  padding-top: 15%;
+  text-align: center;
+}
+
+.clock:before,
+.clock:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  
+  z-index: 2;
+  line-height: 1.15;
+  color: #333;
+}
+
+.clock:before {
+  left: 1.2em; /* Adjust the position of the ':' */
+}
+
+.clock:after {
+  right: 1.2em; /* Adjust the position of the ':' */
+}
+
+.clock span {
+  position: relative;
+  display: inline-block;
+  padding: 0 0.15em; /* Adjust padding for smaller size */
+  margin: 0 0.03em; /* Adjust margin for smaller size */
+  z-index: 1;
+
+  transform: perspective(750);
+  transform-style: preserve-3d;
+}
+
+.clock span:first-child {
+  margin-left: 0;
+}
+
+.clock span:last-child {
+  margin-right: 0;
+}
+
+.clock span:nth-child(2),
+.clock span:nth-child(4) {
+  margin-right: 0.1em; /* Adjust margin for smaller size */
+}
+
+.clock span:nth-child(3),
+.clock span:nth-child(5) {
+  margin-left: 0.1em; /* Adjust margin for smaller size */
+}
+
+.clock span:before,
+.clock span:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  color: #eee;
+  text-shadow: 0 1px 0 #fff;
+  background: #333;
+  border-radius: 0.1em;
+  outline: 1px solid transparent;
+
+  backface-visibility: hidden;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.clock span:before {
+  opacity: 1;
+  z-index: 1;
+  content: attr(data-old);
+  transform-origin: 0 0;
+  transform: translate3d(0, 0, 0) rotateX(0);
+}
+
+.clock span:after {
+  opacity: 0;
+  z-index: 2;
+  content: attr(data-now);
+  transform-origin: 0 100%;
+  transform: translate3d(0, -102.5%, 0) rotateX(90deg);
+}
+
+.clock .flip:before {
+  opacity: 0;
+  transform: translate3d(0, 102.5%, 0) rotateX(-90deg);
+}
+
+.clock .flip:after {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) rotateX(0);
+}
+
